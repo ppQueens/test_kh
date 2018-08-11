@@ -1,5 +1,3 @@
-
-
 <?php
 
 foreach ($data["all"] as $indx => $value) {
@@ -15,16 +13,21 @@ foreach ($data["all"] as $indx => $value) {
 
                 input[type=file] {
                     padding: 10px;
+                                            
                 }
             </style>';
     $src = "";
     if ($value["photo"]) {
         $src = 'data:image/jpg;base64,' . base64_encode($value["photo"]);
+        echo '<style>.user_pic'.$indx.':hover {
+                            transform: scale(2.5); 
+                        }
+            </style>';
     } else $src = 'http://placehold.it/180';
 
-    echo '<img id="blah" src="'.$src.'"/>';
+    echo '<img class="user_pic' . $indx .  '" src="' . $src . '"/>';
 
-    echo '<div><a href="/profile?user='. $value["email"] .'" >'. $value["email"] .' </a></div>';
+    echo '<div><a href="/profile?user=' . $value["email"] . '" >' . $value["email"] . ' </a></div>';
 
     echo '</div></div></div>';
 //            <a href="/profile?user='. $value["email"] .'" > </a>

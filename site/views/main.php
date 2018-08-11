@@ -45,7 +45,7 @@
                 <a class="nav-link" href="/registration">Регистрация</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Список пользователей</a>
+                <a class="nav-link" href="/profile/all">Список пользователей</a>
             </li>
 
         </ul>
@@ -102,7 +102,7 @@
 
 
             <li>
-                <a class=\"\" href=\"/profile/all\"> /profile/all - Профили всех юзеров из базы (страница доступна только вошедшым пользователям)</a>
+                <a class=\"\" href=\"/profile/all\"> /profile/all - Профили всех юзеров из базы (страница доступна только вошедшим пользователям)</a>
             </li>
 
 

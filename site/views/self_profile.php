@@ -22,10 +22,14 @@
                         input[type=file] {
                             padding: 10px;
                         }
+
+
                     </style>
 
 
-                    <img id="blah" src="<?php if($data["user"]["photo"]) {echo 'data:image/jpg;base64,'.base64_encode($data["user"]["photo"]);} else echo 'http://placehold.it/180';  ?>"/>
+                    <img id="blah" src="<?php if($data["user"]["photo"]) {
+
+                        echo 'data:image/jpg;base64,'.base64_encode($data["user"]["photo"]);} else echo 'http://placehold.it/180';  ?>"/>
 
                 </div>
 
